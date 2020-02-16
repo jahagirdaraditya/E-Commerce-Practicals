@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>2.3</title>
+	<h1><center>Practical No. - 2</center></h1>
+	<p align="center">List No. - 3</p>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<hr>
+</head>
+<body>
+	<form action="#" name="adi" onsubmit="return validateForm()" method="post">
+		<fieldset>
+			<legend>MGMCOE:</legend>
+			<label for="fname">Enter your Name:</label>
+		    <input type="text" id="fname" name="fname" value="" pattern="[A-Za-z]{,30}" ><br><br>
+		    <!-- <label for="lname">Last name:</label>
+		    <input type="text" id="lname" name="lname" value="" pattern="[A-Za-z]{,8}" ><br><br>
+		     -->
+		     <input type="submit" value="Submit" onclick="">
+		</fieldset>
+	</form>
+	<script type="text/javascript">
+		function Alert() {
+			var txt;
+			var r = confirm("Confirm a submission");
+			if (r == true) {
+			txt = "Form is submitted!";
+			} else {
+				txt = "You pressed Cancel!";
+				}
+			alert(txt);
+		}
+		function validateForm() {
+		  var x = document.forms["adi"]["fname"].value;
+		  //var y = document.form["adi"]["lname"].value;
+		  if (x == "") {
+		    alert("Name must be filled out");
+		    return false;
+  			}
+			var txt;
+			var r = confirm("Confirm a submission");
+			if (r == true) {
+				txt = "Form is submitted!";
+			} 
+			if (r == false) {
+				txt = "You pressed Cancel!";
+			}
+			alert(txt);
+		}
+
+	</script>
+</body>
+</html>
